@@ -5,7 +5,7 @@
 ## Abstract
 (to be updated)
 
-## Experiment Steps
+## Experiment Details
 ### 1. Data Collection
 Before you begin, note the following important points:
 
@@ -17,12 +17,14 @@ Before you begin, note the following important points:
 * **Data Models:** The definitions of the relevant data objects can be found in `models.py`.
 
 **Collection Process**
+
 For each data source, the collection is divided into two steps. Using the code category as an example:
 
 **Step 1: Searching:**
    * Run `search_code.py` to search the code category.
    * The search results are saved in the `search_results` subdirectory with the file name `code_search_results.json`.
    * Note: For issues and pull requests, run `search_pr_and_discussions.py`. The results will be stored as `pullrequests_search_results.json` and `discussions_search_results.json` in the `search_results` subdirectory.
+
 **Step 2: Extraction**
    * Run `extract_code.py` to parse `code_search_results.json` obtained from Step 1.
    * This script parses `search_results/code_search_results.json`, retrieves conversation records from the ChatGPT website, and saves the parsed data as an array of `githubCode` objects in `data/code_sharings.json`.
@@ -49,7 +51,7 @@ To collect all raw data, execute the search and extraction scripts sequentially 
 **Note:** If you encounter errors related to missing directories or files, manually create the necessary directories and retry.
 
 ### Experiment Environment
-Ensure that the following packages are installed:
+Required packages and their versions:
 * `beautifulsoup4==4.12.3`
 * `emoji==2.12.1`
 * `lxml==5.2.2`
