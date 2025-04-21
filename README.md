@@ -9,6 +9,7 @@ The advent of Large Language Models (LLMs) has introduced a new paradigm in soft
 <!--
 * **Initial Dataset** contains the original data collected from GitHub without cleaning.
 * **After clean.zip** contains data after the initial cleaning of `Initial Dataset.zip`.
+**DevChat.zip** contains data after the invalid data in `After clean.zip` is deleted through the final MS Excel file.
 -->
-* **DevChat.zip** contains data after the invalid data in `After clean.zip` is deleted through the final MS Excel file.
-* **Extracted Data.zip** is the extracted data as the data analysis results.
+* **DevChat.zip** contains the cleaned data, with all invalid entries removed, as saved in JSON files.
+* **Extracted Data.zip** contains the extracted results of the data analysis, provided in MS Excel files.
